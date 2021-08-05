@@ -5,69 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LXLab</title>
-    <LINK REL=StyleSheet HREF="styles.css">
-        <LINK REL=StyleSheet HREF="responsive.css">
+    <LINK REL=StyleSheet HREF="../styles.css">
+    <LINK REL=StyleSheet HREF="responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
 </head>
-
-<body>
 <!--BARRA DE NAVEGACIÓN-->
+<body class="backgroundContacto">
+   
         <div class="navbar">
             <div class="contenedor">
-                <a href="/index.html">LX</a>
+                <a href="../index.html">LX</a>
                 <a href="">Catálogo</a>
-                <a href="./paginas/Equipo.html">Equipo</a>
-                <a href="./paginas/contacto.html" >Contacto</a>
+                <a href="../paginas/Equipo.html">Equipo</a>
+                <a href="../paginas/contacto.html" >Contacto</a>
             </div>
-           <svg id="menu" class="icon line" width="32" height="32" id="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><line x1="9" y1="18" x2="21" y2="18" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line><line x1="3" y1="12" x2="21" y2="12" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line><line x1="3" y1="6" x2="15" y2="6" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line></svg>"
+           <svg id="menu" class="icon line" width="48" height="48" id="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><line x1="9" y1="18" x2="21" y2="18" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line><line x1="3" y1="12" x2="21" y2="12" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line><line x1="3" y1="6" x2="15" y2="6" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line></svg>"
 
         </div>
 
-<!---CONTENIDO-->
-    <div>
-        <img class="img1" src="../ProjectoBedu/anexos/iStock-1245297617.jpg" alt="">
-        <div class="texto-encima">Descubre las tendencias en innovación</div>
-        <button class="button">Exploremos</button>
-    </div>
-
-    <section id="main-container">
-    <div class="textobienvenida">
-        <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
-        </p>
-
-    </div>
-
-    <div class="parent">
-        <div class="seccion1" class="card" style="width: 18rem;">
-            <img src="./anexos/imagen1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        
-        <div class="seccion2" class="card" style="width: 18rem;">
-            <img src="./anexos/imagen1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+<!--SECCIÓN DE FORMULARIO-->        
+    
+    <section class="inputsize">
+        <h1>Contacto</h1>
+        <p id="textContact">Si tienes dudas o quieres ser parte de la comunidad de investigación e innovación, déjanos tus datos para comunicarnos contigo</p>
+        <div  class="input-group input-group-sm mb-3">
+            <!--<span class="input-group-text" id="inputGroup-sizing-sm" >Nombre</span>-->
+            <input placeholder="Nombre completo" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
         </div>
 
-        <div class="seccion3" class="card" style="width: 18rem;">
-            <img src="./anexos/imagen1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Correo" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@example.com</span>
         </div>
-    </div>
-</section>
+
+        <div class="input-group">
+            <!--<span class="input-group-text">Comentarios</span>-->
+            <textarea class="form-control" aria-label="With textarea" placeholder="Comentarios"></textarea>
+        </div>
+
+        <button class="buttonContacto">Enviar</button>
+
+    </section>
+  
 
 <!--FOOTER-->
     <footer>

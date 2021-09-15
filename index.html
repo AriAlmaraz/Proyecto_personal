@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LXLab</title>
     <LINK REL=StyleSheet HREF="styles.css">
-        <LINK REL=StyleSheet HREF="responsive.css">
+    <LINK REL=StyleSheet HREF="responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
 </head>
@@ -14,23 +14,50 @@
 <body>
 <!--BARRA DE NAVEGACIÓN-->
         <div class="navbar">
+            <a class="navbar-logo" href="/">
+                <div class="logo-image">
+                      <img src="../ProjectoBedu/anexos/logo.png " class="img-fluid">
+                </div>
+          </a>
             <div class="contenedor">
                 <a href="/index.html">LX</a>
-                <a href="">Catálogo</a>
+                <a href="./paginas/catalogo.html">Catalogo</a>
                 <a href="./paginas/Equipo.html">Equipo</a>
                 <a href="./paginas/contacto.html" >Contacto</a>
             </div>
-           <svg id="menu" class="icon line" width="32" height="32" id="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><line x1="9" y1="18" x2="21" y2="18" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line><line x1="3" y1="12" x2="21" y2="12" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line><line x1="3" y1="6" x2="15" y2="6" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line></svg>"
+           <svg id="menu" class="icon line" width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><line x1="9" y1="18" x2="21" y2="18" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line><line x1="3" y1="12" x2="21" y2="12" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line><line x1="3" y1="6" x2="15" y2="6" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></line></svg>"
 
         </div>
 
 <!---CONTENIDO-->
     <div>
+        <video width="100%" autoplay muted controls loop>
+            <source src="../ProjectoBedu/anexos/IntroalLXLAB-WebCul.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <img class="img1" src="../ProjectoBedu/anexos/iStock-1245297617.jpg" alt="">
         <div class="texto-encima">Descubre las tendencias en innovación</div>
-        <button class="button">Exploremos</button>
+        <button class="button" onclick="explorar()">Exploremos</button>
     </div>
 
+    <!---login-->
+<section class="modal-body inputsizeForm">
+    <div id="loginForm" class="backgroundContacto contenedor" style="display: none;">
+        <h1>Bienvenido</h1>
+
+        <p id="textContact">Inicia sesión para poder ingresar al catálogo</p>
+
+        <div  class="input-group input-group-sm mb-3">
+            <input id="user" placeholder="Correo" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+
+        <div class="input-group mb-3">
+            <input id= "pwd" type="password" class="form-control" placeholder="password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        </div>
+
+        <button class="buttonContacto" onclick="login()">Comenzar</button>
+    </div>
+</section>
     <section id="main-container">
     <div class="textobienvenida">
         <p>
@@ -41,29 +68,29 @@
 
     <div class="parent">
         <div class="seccion1" class="card" style="width: 18rem;">
-            <img src="./anexos/imagen1.jpg" class="card-img-top" alt="...">
+            <img src="./anexos/04.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Innovaciones</h5>
+              <p class="card-text">Somos un Discovery and design team que buscamos nuevas formas de aprendizaje.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
             </div>
         </div>
         
         <div class="seccion2" class="card" style="width: 18rem;">
             <img src="./anexos/imagen1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Workshops</h5>
+              <p class="card-text">Brindamos a equipos y empresas workshops sobre Design Thinking, Service design y Scrum.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
             </div>
         </div>
 
         <div class="seccion3" class="card" style="width: 18rem;">
-            <img src="./anexos/imagen1.jpg" class="card-img-top" alt="...">
+            <img src="./anexos/EMA.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Laboratorios</h5>
+              <p class="card-text">El LX LAB está conformado de cinco laboratorios internos dedicados a buscar las mejores soluciones desde su variable.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
             </div>
         </div>
     </div>
@@ -81,6 +108,8 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="myweb.js"></script>
+  </body>
 </html>

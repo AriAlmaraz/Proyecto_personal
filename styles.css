@@ -90,37 +90,96 @@ body{
     
 }
 
+.buttonSearch{
+    background-color:crimson;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+    
+}
+
+.button:hover{
+    background-color: blue;
+}
+
+.buttonContacto:hover{
+    background-color: blue;
+}
+
 .parent {
-    display: grid;
-    /*grid-template-columns: repeat(7, 1fr);*/
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-    grid-template-areas:
-    ". imagen1 . imagen2 . imagen3 .";
-    margin-top: 100px;
-    }
+  display: grid;
+ /* grid-template-columns: (2, 220px);*/
+  grid-template-areas: 
+  "box1 box2 box3"
+  "box4 box5 box6";
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+  padding: 30px;
+}
 
 .seccion1{
     display: inline-block;
     width: 100%;
     background-color: rgb(245, 245, 245);
     /*margin: 50px;*/
-    grid-column: 2;
+    grid-area: box1;
+    align-self: center;
+    justify-self: center;
 }
 
 .seccion2{
     display: inline-block;
     width: 100%;
     background-color: rgb(245, 245, 245);
-    grid-column: 4;
+    grid-area: box2;
+    align-self: center;
+    justify-self: center;
+    align-self: center;
+    justify-self: center;
 }
 
 .seccion3{
     display: inline-block;
     width: 100%;
     background-color:rgb(245, 245, 245);
-    grid-column: 6;
+    grid-area: box3;
+    align-self: center;
+    justify-self: center;
+}
+
+.seccion4{
+    display: inline-block;
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+    grid-area: box4;
+    align-self: center;
+    justify-self: center;
+}
+
+.seccion5{
+    display: inline-block;
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+    grid-area: box5;
+    align-self: center;
+    justify-self: center;
+}
+
+.seccion6{
+    display: inline-block;
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+    grid-area: box6;
+    align-self: center;
+    justify-self: center;
 }
 
 .textobienvenida{
@@ -154,7 +213,17 @@ footer {
     width: 600px;
 }
 
-.inputsize > .buttonContacto{
+.inputsizeForm{
+    display: block;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding-top: 50px;
+    width: 600px;
+}
+
+
+.buttonContacto{
   background-color:crimson;
   border: none;
   color: white;
@@ -162,15 +231,17 @@ footer {
   margin-top: 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /*display: inline-block;*/
   font-size: 16px;
   margin: 15px 2px;
   cursor: pointer;
   border-radius: 8px;
   font-family: 'Open Sans';
-  /*position: absolute;
   display: flex;
-  align-self: flex-end;*/
+  align-self: center;
+  /*position: absolute;
+  
+  */
 }
 
 .backgroundContacto{
@@ -185,11 +256,6 @@ h1{
 #textContact{
     color: white;
     padding-bottom: 20px;
-}
-
-.backgroundContacto{
-    background: rgb(0,212,255);
-    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(79,19,226,1) 100%);
 }
 
 
@@ -230,4 +296,23 @@ h1{
     overflow-wrap: break-word; 
     text-align: justify;
     padding-top: 20px;
+}
+
+.searchNav{
+    display: flexbox;
+    background-color: lightgray;
+    padding: 20px;
+
+}
+
+.searchNav input{
+    width: 100%;
+    height: 30px;
+}
+
+.logo-image{
+    width: 46px;
+    height: 46px;
+    overflow: hidden;
+   
 }
